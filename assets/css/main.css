@@ -25,6 +25,7 @@
 	justify-content: space-between;
 	align-items: center;
 	flex-direction: row;
+	text-align: end;
 }
 
 html, body, div, span, applet, object,

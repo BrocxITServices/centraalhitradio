@@ -25,7 +25,7 @@
 					</div>
 					<div style="margin-top: 25px;">
 						<audio id="audio-source" crossOrigin="anonymous" controls autoplay="">
-							<source src="https://stream-10.pmteurope.com:8020/stream" type="audio/mpeg">Your browser does not support the audio element.
+							<source src="https://a11.asurahosting.com:8620/radio.mp3" type="audio/mp3">Your browser does not support the audio element.
 						</audio>
 					</div>
 				</div>
@@ -189,8 +189,13 @@
 				// From https://cdn.jsdelivr.net/gh/foobar404/wave.js/dist/bundle.js
 			</script>
 			<script>
+				const apiKey = "1e5068a0ddd0525d:3baec992e34dee5d5fcf87ae8757cda0";
 				const debug = false;
-				const azuraCastApiUrlWSS = "https://demo.azuracast.com/api/live/nowplaying/websocket";
+
+				//const azuraCastApiUrlWSS = "https://demo.azuracast.com/api/live/nowplaying/websocket";
+				// https://a11.asurahosting.com/api/nowplaying/centraal_hitradio
+
+				const azuraCastApiUrlWSS = "wss://a11.asurahosting.com/api/live/nowplaying/websocket";
 				//const azuraCastApiUrl = "https://demo.azuracast.com/api/nowplaying_static/azuratest_radio.json";
 
 				document.addEventListener("DOMContentLoaded", (e) => {
@@ -241,7 +246,7 @@
 
 						socket.send(JSON.stringify({
 							subs: {
-								"station:azuratest_radio": { recover: true }
+								"station:centraal_hitradio": { recover: true }
 							}
 						}));
 					};
