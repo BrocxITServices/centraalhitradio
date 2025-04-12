@@ -204,6 +204,22 @@ input, select, textarea {
 		padding: 1em 0 1em 2em;
 	}
 
+	.chatrow{
+		margin-left: 25px; 
+		margin-right: 25px;
+	}
+
+	@media screen and (max-width: 1280px) {
+
+		.container {
+			width: 48em;
+		}
+
+			.container.medium {
+				width: 36em;
+			}
+	}
+
 /* Container */
 
 	.container {
@@ -225,7 +241,6 @@ input, select, textarea {
 				.container.medium {
 					width: 36em;
 				}
-
 		}
 
 		@media screen and (max-width: 980px) {
